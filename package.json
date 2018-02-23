@@ -1,0 +1,16 @@
+{
+  "name": "@mapbox/eslint-config-mapbox",
+  "version": "1.0.0",
+  "description": "Generic eslint configuration for Mapbox",
+  "main": "node.json",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mapbox/eslint-config-mapbox.git"
+  },
+  "author": "Mapbox",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mapbox/eslint-config-mapbox/issues"
+  },
+  "homepage": "https://github.com/mapbox/eslint-config-mapbox#readme"
+}
