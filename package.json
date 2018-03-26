@@ -2,7 +2,7 @@
   "name": "@mapbox/eslint-config-mapbox",
   "version": "1.0.0",
   "description": "Generic eslint configuration for Mapbox",
-  "main": "node.json",
+  "main": "node.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mapbox/eslint-config-mapbox.git"
