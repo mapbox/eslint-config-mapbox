@@ -1,5 +1,7 @@
 # eslint-config-mapbox
 
+[![Build Status](https://travis-ci.org/mapbox/eslint-config-mapbox.svg?branch=master)](https://travis-ci.org/mapbox/eslint-config-mapbox)
+
 [Shared eslint config](https://eslint.org/docs/developer-guide/shareable-configs) for Mapbox engineering teams.
 
 ## How to use this in a project
