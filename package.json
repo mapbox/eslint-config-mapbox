@@ -12,5 +12,13 @@
   "bugs": {
     "url": "https://github.com/mapbox/eslint-config-mapbox/issues"
   },
-  "homepage": "https://github.com/mapbox/eslint-config-mapbox#readme"
+  "homepage": "https://github.com/mapbox/eslint-config-mapbox#readme",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1"
+  }
 }
