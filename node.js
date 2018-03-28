@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: resolve.resolve('./lib/base-node')
+  extends: require.resolve('./lib/base-node')
 };
