@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: require.resolve('./lib/base'),
+  extends: require.resolve('./base'),
   plugins: ['promise'],
   rules: {
     'promise/no-return-wrap': 'error',
