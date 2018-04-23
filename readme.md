@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/mapbox/eslint-config-mapbox.svg?branch=master)](https://travis-ci.org/mapbox/eslint-config-mapbox)
 
-[Shared eslint config](https://eslint.org/docs/developer-guide/shareable-configs) for Mapbox engineering teams.
+[Shared ESLint config](https://eslint.org/docs/developer-guide/shareable-configs) for Mapbox engineering teams.
 
-## How to use this in a project
+## Quick start with Node.js
 
 1. Install the following dev-dependencies:
 
@@ -23,15 +23,17 @@
     }
     ```
 
-    Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific (4, 6, or 8) eslint configuration. For example:
+3. Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`.
 
     ```json
-    "eslintConfig": {
-      "extends": "@mapbox/eslint-config-mapbox/node6"
+    {
+      "engines": {
+        "node": ">=6"
+      }
     }
     ```
 
-3. Run `eslint` on your project as part of your `test` and `lint` scripts:
+4. Run `eslint` on your project as part of your `test` and `lint` scripts:
 
     ```json
     {
@@ -41,3 +43,46 @@
       }
     }
     ```
+
+## Usage
+
+The "Quick start" above exemplifies usage of this package with standard Node.js code.
+
+Depending on the ECMAScript version of your code, whether you are using non-standard syntax like Flow and React's JSX, or other considerations, you may want to extend a variety of configurations provided by this package. `eslint-config-mapbox` exposes several configurations targeting specific ESLint plugins, each named after the plugin it targets.
+
+To use each plugin-specific configuration, you'll need to do the following:
+
+- Install as dev-dependencies `@mapbox/eslint-config-mapbox`, `eslint`, and any plugins that are used by the configuration(s) you are extending, such as `eslint-plugin-node` or `eslint-plugin-react`.
+- Add the configuration(s) you are using to the `"extends"` array in your project's ESLint configuration, like this:
+
+    ```json
+    {
+      "extends": [
+        "@mapbox/eslint-config-mapbox/react",
+        "@mapbox/eslint-config-mapbox/import",
+        "@mapbox/eslint-config-mapbox/promise"
+      ]
+    }
+    ```
+
+### Plugin-specific configurations
+
+**All plugin-specific configurations extend the same base configuration, found in `base.js`.**
+
+- [`@mapbox/eslint-config-mapbox`**`/node`**](./node.js)
+  - Depends on [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node).
+  - For Node.js and CommonJS.
+  - There are also shortcut configurations targeting each version of Node.js we use: **`node4`, `node6`, `node8`**.
+- [`@mapbox/eslint-config-mapbox`**`/react`**](./react.js)
+  - Depends on [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
+  - For React and JSX.
+- [`@mapbox/eslint-config-mapbox`**`/import`**](./import.js)
+  - Depends on [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
+  - For ES2015 modules (`import` and `export`).
+- [`@mapbox/eslint-config-mapbox`**`/promise`**](./promise.js)
+  - Depends on [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise).
+  - For `Promise`s.
+
+### With Prettier
+
+If you are using [Prettier](https://prettier.io/) to format your JS, add [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) at the end of your `"extends"` array. It will turn off all ESLint rules related to the code-style preferences that Prettier already addresses.
