@@ -85,4 +85,4 @@ To use each plugin-specific configuration, you'll need to do the following:
 
 ### With Prettier
 
-If you are using [Prettier](https://prettier.io/) to format your JS, add [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) at the end of your `"extends"` array. It will turn off all ESLint rules related to the code-style preferences that Prettier already addresses.
+If you are using [Prettier](https://prettier.io/) to format your JS, install [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) and add it at the end of your `"extends"` array. It will turn off all ESLint rules related to the code-style preferences that Prettier already addresses.
