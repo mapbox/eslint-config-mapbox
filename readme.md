@@ -85,7 +85,7 @@ To use each plugin-specific configuration, you'll need to do the following:
 - [`@mapbox/eslint-config-mapbox`**`/xss`**](./xss.js)
   - Depends on [eslint-plugin-xss](https://github.com/Rantanen/eslint-plugin-xss).
   - For avoiding potential XSS issues in front end JavaScript.
-  - Does not extend the base configuration. Either combine with another plugin-specific configuration like react (`"extends": "@mapbox/eslint-config-mapbox/react"`]) or extend with the base configuration directly (`"extends": "@mapbox/eslint-config-mapbox"`).
+  - Does not extend the base configuration. Either combine with another plugin-specific configuration like react (`"extends": "@mapbox/eslint-config-mapbox/react"`) or extend with the base configuration directly (`"extends": "@mapbox/eslint-config-mapbox"`).
 
 ### With Prettier
 
