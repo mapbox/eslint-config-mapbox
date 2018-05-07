@@ -67,8 +67,6 @@ To use each plugin-specific configuration, you'll need to do the following:
 
 ### Plugin-specific configurations
 
-**All plugin-specific configurations extend the same base configuration, found in `base.js`.**
-
 - [`@mapbox/eslint-config-mapbox`**`/node`**](./node.js)
   - Depends on [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node).
   - For Node.js and CommonJS.
@@ -82,6 +80,10 @@ To use each plugin-specific configuration, you'll need to do the following:
 - [`@mapbox/eslint-config-mapbox`**`/promise`**](./promise.js)
   - Depends on [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise).
   - For `Promise`s.
+- [`@mapbox/eslint-config-mapbox`**`/xss`**](./xss.js)
+  - Depends on [eslint-plugin-xss](https://github.com/Rantanen/eslint-plugin-xss).
+  - For avoiding potential XSS issues in front end JavaScript.
+  - Does not perform any JavaScript style linting if used on its own.
 
 ### With Prettier
 
