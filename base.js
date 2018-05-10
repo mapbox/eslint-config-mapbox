@@ -35,6 +35,7 @@ module.exports = {
     'spaced-comment': ['error', 'always'],
     'keyword-spacing': ['error', { before: true, after: true }],
     'template-curly-spacing': ['error', 'never'],
-    'semi-spacing': 'error'
+    'semi-spacing': 'error',
+    'indent': ['error', 2, { 'SwitchCase': 1 }]
   }
 };
