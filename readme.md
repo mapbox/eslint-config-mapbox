@@ -26,21 +26,17 @@
 3. Specify the version of Node.js your project uses by setting `.engines.node` in your `package.json`.
 
     ```json
-    {
-      "engines": {
-        "node": ">=6"
-      }
+    "engines": {
+      "node": ">=6"
     }
     ```
 
 4. Run `eslint` on your project as part of your `test` and `lint` scripts:
 
     ```json
-    {
-      "scripts": {
-        "test": "tape test/*.test.js && eslint *.js test/*.js",
-        "lint": "eslint *.js test/*.js"
-      }
+    "scripts": {
+      "lint": "eslint **/*.js",
+      "test": "tape test/*.test.js && npm run lint",
     }
     ```
 
