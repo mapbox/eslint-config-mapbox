@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     'node/no-unsupported-features/es-builtins': ['error'],
     'node/no-unsupported-features/es-syntax': ['error'],
+    'node/no-unsupported-features/node-builtins': ['error'],
     'node/no-missing-require': 'error'
   }
 };
