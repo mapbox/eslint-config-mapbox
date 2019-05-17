@@ -3,6 +3,8 @@
 module.exports = {
   extends: require.resolve('./node'),
   rules: {
-    'node/no-unsupported-features': ['error', { version: 8 }]
+    'node/no-unsupported-features/es-builtins': ['error', { version: 8 }],
+    'node/no-unsupported-features/es-syntax': ['error', { version: 8 }],
+    'node/no-unsupported-features/node-builtins': ['error', { version: 8 }]
   }
 };
