@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.1] - 2019-06-26
+- Bugfix for compatibility with eslint v6
+
 ## [2.0.0] - 2019-05-17
 - Breaking: remove support for Node 4 and 6
 - Breaking: require eslint >= 5.16.0 and eslint-plugin-node >= 9.0.0
