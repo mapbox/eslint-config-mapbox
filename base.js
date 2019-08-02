@@ -19,7 +19,7 @@ module.exports = {
     'no-console': 'off',
 
     // Code style
-    "curly": "error",
+    'curly': 'error',
     'arrow-parens': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'comma-dangle': ['error', 'never'],
