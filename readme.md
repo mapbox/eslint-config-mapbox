@@ -66,7 +66,7 @@ To use each plugin-specific configuration, you'll need to do the following:
 - [`@mapbox/eslint-config-mapbox`**`/node`**](./node.js)
   - Depends on [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node).
   - For Node.js and CommonJS.
-  - Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific ESLint configuration: **`node8`, `node10`, `node12`**.
+  - Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific ESLint configuration: **`node10`, `node12`**.
 - [`@mapbox/eslint-config-mapbox`**`/react`**](./react.js)
   - Depends on [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
   - For React and JSX.
