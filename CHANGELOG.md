@@ -4,6 +4,7 @@
 
 - Breaking: remove support for Node 8.
 - Change base `ecmaVersion` from `2018` to `2020`.
+- Add `node14` configuration.
 
 ## [2.0.1] - 2019-06-26
 
