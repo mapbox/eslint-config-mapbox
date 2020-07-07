@@ -3,6 +3,7 @@
 ## 3.0.0 (2020-06-06)
 
 - Breaking: remove support for Node 8.
+- Breaking: requires ESLint >v7.
 - Change base `ecmaVersion` from `2018` to `2020`.
 - Add `node14` configuration.
 
