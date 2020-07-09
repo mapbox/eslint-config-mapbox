@@ -36,6 +36,8 @@ module.exports = {
     'keyword-spacing': ['error', { before: true, after: true }],
     'template-curly-spacing': ['error', 'never'],
     'semi-spacing': 'error',
-    'indent': ['error', 2, { 'SwitchCase': 1 }]
-  }
+    'indent': ['error', 2, { 'SwitchCase': 1 }],
+    'inclusive-language/use-inclusive-words': 'error'
+  },
+  plugins: ['inclusive-language']
 };
