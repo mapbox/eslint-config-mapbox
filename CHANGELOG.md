@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.0 (2020-07-09)
+
+- Breaking: Adds eslint-plugin-inclusive-language; will error if uninclusive language is used.
+
 ## 3.0.0 (2020-06-06)
 
 - Breaking: remove support for Node 8.
