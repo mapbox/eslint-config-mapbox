@@ -34,12 +34,6 @@ module.exports = {
         'no-array-constructor': 'off', // must be disabled so the typescript one can take over.
         'no-dupe-keys': 'error',
         'no-extra-semi': 'off', // must be disabled so the typescript one can take over.
-        'no-restricted-imports': [
-          'error',
-          {
-            patterns: ['*/config']
-          }
-        ],
         'no-shadow': 'off',
         'no-unused-vars': 'off', // must be disabled so the typescript one can take over.
         'no-use-before-define': 'off', // must be disabled so the typescript one can take over.
@@ -52,7 +46,6 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'error',
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
-        // 'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
