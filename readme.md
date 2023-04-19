@@ -10,9 +10,7 @@
 
     ```
     npm install --save-dev \
-      @mapbox/eslint-config-mapbox \
-      eslint \
-      eslint-plugin-node
+      @mapbox/eslint-config-mapbox
     ```
 
 2. Extend the `@mapbox/eslint-config-mapbox` config in your `.eslintrc` (or `eslintConfig` key in your `package.json`):
@@ -23,7 +21,22 @@
     }
     ```
 
-3. Specify the version of Node.js your project uses by setting `.engines.node` in your `package.json`.
+    For TypeScript, prefer `.eslint.js` and use the snippet below:
+
+    ```javascript
+    'plugins': [
+      '@typescript-eslint',
+      'prettier'
+    ],
+    'parserOptions': {
+      'tsconfigRootDir': __dirname
+    },
+    'extends': [
+      '@mapbox/eslint-config-mapbox/node14-typescript'
+    ]
+    ```
+
+3. Specify the version of Node.js your project uses by setting `.engines.node` in your `package.json`, according to the settings you choose.
 
     ```json
     "engines": {
@@ -35,7 +48,7 @@
 
     ```json
     "scripts": {
-      "lint": "eslint **/*.js",
+      "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
       "test": "tape test/*.test.js && npm run lint",
     }
     ```
@@ -66,7 +79,7 @@ To use each plugin-specific configuration, you'll need to do the following:
 - [`@mapbox/eslint-config-mapbox`**`/node`**](./node.js)
   - Depends on [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node).
   - For Node.js and CommonJS.
-  - Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific ESLint configuration: **`node10`, `node12`**.
+  - Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific ESLint configuration: **`node10`, `node12`, `node14`, `node14-typescript`**.
 - [`@mapbox/eslint-config-mapbox`**`/react`**](./react.js)
   - Depends on [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
   - For React and JSX.

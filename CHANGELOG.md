@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.0 (2023-04-17)
+- Breaking: eslint major version updated to 8
+- Dependencies moved to peerDependencies
+- Added basic TypeScript configuration for `node14 `
+
 ## 3.0.0 (2020-06-06)
 
 - Breaking: remove support for Node 8.
