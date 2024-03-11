@@ -32,7 +32,7 @@
       'tsconfigRootDir': __dirname
     },
     'extends': [
-      '@mapbox/eslint-config-mapbox/node14-typescript'
+      '@mapbox/eslint-config-mapbox/node20-typescript'
     ]
     ```
 
@@ -40,7 +40,7 @@
 
     ```json
     "engines": {
-      "node": ">=8"
+      "node": ">=20"
     }
     ```
 
@@ -79,7 +79,7 @@ To use each plugin-specific configuration, you'll need to do the following:
 - [`@mapbox/eslint-config-mapbox`**`/node`**](./node.js)
   - Depends on [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node).
   - For Node.js and CommonJS.
-  - Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific ESLint configuration: **`node10`, `node12`, `node14`, `node14-typescript`**.
+  - Specify the version of Node.js your project uses by either setting `.engines.node` in your `package.json`, or by extending an LTS-version-specific ESLint configuration: **`node10`, `node12`, `node14`, `node14-typescript`, `node20`, `node20-typescript`**.
 - [`@mapbox/eslint-config-mapbox`**`/react`**](./react.js)
   - Depends on [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
   - For React and JSX.

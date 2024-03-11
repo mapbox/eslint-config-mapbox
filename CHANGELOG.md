@@ -1,5 +1,8 @@
 # Changelog
 
+## 5.0.0 (2024-03-11)
+- Added `node20` (and relative TypeScript) configuration
+
 ## 4.0.0 (2023-04-17)
 - Breaking: eslint major version updated to 8
 - Dependencies moved to peerDependencies
