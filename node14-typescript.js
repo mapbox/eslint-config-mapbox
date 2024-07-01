@@ -30,7 +30,7 @@ module.exports = {
           }
         ],
         curly: 'error',
-        'node/no-unsupported-features/es-syntax': 'off',
+        'n/no-unsupported-features/es-syntax': 'off',
         'no-array-constructor': 'off', // must be disabled so the typescript one can take over.
         'no-dupe-keys': 'error',
         'no-extra-semi': 'off', // must be disabled so the typescript one can take over.
