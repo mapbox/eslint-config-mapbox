@@ -1,5 +1,8 @@
 # Changelog
 
+## 5.0.1 (2024-07-01)
+- Replace `eslint-plugin-node` (no longer maintained) with `eslint-plugin-n` 
+
 ## 5.0.0 (2024-03-11)
 - Added `node20` (and relative TypeScript) configuration
 

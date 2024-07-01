@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/eslint-config-mapbox",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Generic eslint configuration for Mapbox",
   "main": "node.js",
   "repository": {
