@@ -44,6 +44,8 @@ module.exports = {
         '@typescript-eslint/ban-types': 'error',
         '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/explicit-function-return-type': 'error',
+        '@typescript-eslint/explicit-member-accessibility': 'error',
+        '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-function': 'error',
