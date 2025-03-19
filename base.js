@@ -8,14 +8,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020
   },
+  plugins: ['jsonc', '@mapbox/mapbox'],
   rules: {
     'no-var': 'error',
     'prefer-const': 'error',
-    'eqeqeq': ['error', 'smart'],
+    eqeqeq: ['error', 'smart'],
     'no-confusing-arrow': ['error', { allowParens: false }],
     'no-extend-native': 'error',
     'no-use-before-define': ['error', 'nofunc'],
-    'strict': 'error',
+    strict: 'error',
     'no-console': 'off',
 
     // Code style
@@ -29,13 +30,24 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'object-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': 'error',
-    'quotes': ['error', 'single', 'avoid-escape'],
-    'semi': ['error', 'always'],
+    quotes: ['error', 'single', 'avoid-escape'],
+    semi: ['error', 'always'],
     'space-infix-ops': 'error',
     'spaced-comment': ['error', 'always'],
     'keyword-spacing': ['error', { before: true, after: true }],
     'template-curly-spacing': ['error', 'never'],
     'semi-spacing': 'error',
-    'indent': ['error', 2, { 'SwitchCase': 1 }]
-  }
+    indent: ['error', 2, { SwitchCase: 1 }],
+    '@mapbox/mapbox/detect-token': 'error'
+  },
+  overrides: [
+    {
+      files: ['*.json', '*.jsonc'],
+      parser: 'jsonc-eslint-parser',
+      rules: {
+        '@mapbox/mapbox/detect-token': 'error',
+        strict: 'off'
+      }
+    }
+  ]
 };
